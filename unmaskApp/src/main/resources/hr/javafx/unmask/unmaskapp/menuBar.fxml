@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+
+<MenuBar xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.javafx.unmask.unmaskapp.MenuBarController">
+  <menus>
+    <Menu mnemonicParsing="false" text="User">
+      <items>
+        <MenuItem fx:id="logIn" mnemonicParsing="false" onAction="#showLogInScreen" text="Log in" />
+        <MenuItem fx:id="logOut" mnemonicParsing="false" onAction="#showLogOutScreen" text="Log out" />
+      </items>
+    </Menu>
+    <Menu mnemonicParsing="false" text="Search / Delete">
+      <items>
+        <MenuItem mnemonicParsing="false" onAction="#showSearchPlayersScreen" text="Player" />
+            <MenuItem mnemonicParsing="false" onAction="#showSearchTeamsScreen" text="Team" />
+            <MenuItem mnemonicParsing="false" onAction="#showSearchMatchesScreen" text="Match" />
+            <MenuItem mnemonicParsing="false" onAction="#showSearchTournamentsScreen" text="Tournament" />
+            <MenuItem fx:id="searchAdmin" mnemonicParsing="false" onAction="#showSearchAdminsScreen" text="Admin" />
+      </items>
+    </Menu>
+    <Menu mnemonicParsing="false" text="Add">
+      <items>
+        <MenuItem fx:id="addPlayer" mnemonicParsing="false" onAction="#showAddPlayerScreen" text="Player" />
+            <MenuItem fx:id="addTeam" mnemonicParsing="false" onAction="#showAddTeamScreen" text="Team" />
+            <MenuItem fx:id="addMatch" mnemonicParsing="false" onAction="#showAddMatchScreen" text="Match" />
+            <MenuItem fx:id="addTournament" mnemonicParsing="false" onAction="#showAddTournamentScreen" text="Tournament" />
+            <MenuItem fx:id="addAdmin" mnemonicParsing="false" onAction="#showAddAdminScreen" text="Admin" />
+      </items>
+    </Menu>
+      <Menu mnemonicParsing="false" text="Edit">
+        <items>
+          <MenuItem fx:id="editPlayer" mnemonicParsing="false" onAction="#showEditPlayerScreen" text="Player" />
+            <MenuItem fx:id="editTeam" mnemonicParsing="false" onAction="#showEditTeamScreen" text="Team" />
+            <MenuItem fx:id="editMatch" mnemonicParsing="false" onAction="#showEditMatchScreen" text="Match" />
+            <MenuItem fx:id="editTournament" mnemonicParsing="false" onAction="#showEditTournamentScreen" text="Tournament" />
+            <MenuItem fx:id="editAdmin" mnemonicParsing="false" onAction="#showEditAdminScreen" text="Admin" />
+        </items>
+      </Menu>
+      <Menu mnemonicParsing="false" text="Show Changes">
+        <items>
+          <MenuItem fx:id="showChanges" mnemonicParsing="false" onAction="#showChangesScreen" text="Show Changes" />
+        </items>
+      </Menu>
+  </menus>
+</MenuBar>
