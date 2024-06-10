@@ -32,7 +32,7 @@
         <h1 class="dobro">Tehnička pomoć i pitanja</h1>
 
         <h3>Kontakt:</h3><br><br>
-        <p><b>Broj telefona: </b>069 911 420</p><br>
+        <p><b>Broj telefona: </b>069 999 420</p><br>
         <p><b>Email: </b>saricluka76@email.com</p><br><br><br>
 
         <h3>Info:</h3><br><br>
