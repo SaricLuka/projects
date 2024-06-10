@@ -32,11 +32,11 @@
         <?php
             echo "<h1 class='dobro'>Dobrodošli u administraciju baze podataka " . $username . "!</h1>"
         ?>
-        <h3>Administracija RFID čitača i baze podataka:</h3><br><br>
-        <p><b>Zapisi posjeta</b> - <i>Zapisi korištenja kartica na RFID čitaču.</i></p><br>
-        <p><b>Izmjena baze podataka</b> - <i>Brisanje, dodavanje i pregled korisnika iz baze podataka.</i></p><br>
-        <p><b>Tehnička pomoć</b> - <i>Kontakt kreatora za tehničku pomoć i ostala pitanja.</i></p><br>
-        <p><b>Odjava</b> - <i>Odjava iz administracije</i></p><br>
+        <h3 class="podnaslov">Administracija RFID čitača i baze podataka:</h3>
+        <p><b>Zapisi posjeta</b> - <i>Zapisi korištenja kartica na RFID čitaču.</i><br>
+        <b>Izmjena baze podataka</b> - <i>Brisanje, dodavanje i pregled korisnika iz baze podataka.</i><br>
+        <b>Tehnička pomoć</b> - <i>Kontakt kreatora za tehničku pomoć i ostala pitanja.</i><br>
+        <b>Tehnička pomoć</b> - <i>Odjava iz administracije</i><br></p>
     </div>
 </body>
 </html>

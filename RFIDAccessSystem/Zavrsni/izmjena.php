@@ -33,12 +33,29 @@
         <script>  
             function validation()  
             {  
-                var im=document.form1.Ime.value;
-                var pr=document.form1.Prezime.value;
-                var em=document.form1.Email.value;
+                var im=document.form2.Ime.value;
+                var pr=document.form2.Prezime.value;
+                var em=document.form2.Email.value;
+
+                var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
                 if(im.length=="" || pr.length=="" || em.length=="") {  
                     alert("Neka polja su prazna.");  
                     return false;  
+                }else if (im.length > 100) {
+                    alert("Ime ne smije biti duže od 100 znakova.");  
+                    return false;
+                }else if(pr.length > 100){
+                    alert("Prezime ne smije biti duže od 100 znakova.");  
+                }else if (!emailRegex.test(em)) {
+                    alert("Unesite ispravan format email adrese.");  
+                    return false;
+                }else if(em.length > 100){
+                    alert("Email ne smije biti dulji od 100 znakova.");
+                    return false;
+                }
+                else{
+                    return true;
                 }                              
             }
         </script> 
@@ -60,7 +77,7 @@
             echo "Prezime:<br>";
             echo "<input type=\"text\" id=\"Prezime\" name=\"Prezime\" value=\"" .$row['Prezime'] . "\" ><br>";
             echo "Email:<br>";
-            echo "<input type=\"text\" id=\"Email\" name=\"Email\" value=\"" .$row['Email'] . "\" ><br><br>";
+            echo "<input type=\"email\" id=\"Email\" name=\"Email\" value=\"" .$row['Email'] . "\" ><br><br>";
             echo "<input type=\"submit\" class=\"gumb\" name=\"gumb\" value=\"Upiši\">";
             echo "</div>";
         }

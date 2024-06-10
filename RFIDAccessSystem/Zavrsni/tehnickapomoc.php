@@ -31,12 +31,14 @@
     <div class="div1">
         <h1 class="dobro">Tehnička pomoć i pitanja</h1>
 
-        <h3>Kontakt:</h3><br><br>
-        <p><b>Broj telefona: </b>069 999 420</p><br>
-        <p><b>Email: </b>saricluka76@email.com</p><br><br><br>
+        <h3>Kontakt:</h3>
+        <p>
+            <b>Broj telefona: </b>99 379 3201<br>
+            <b>Email: </b>saricluka76@gmail.com<br>
+        </p>
 
-        <h3>Info:</h3><br><br>
-        <p><b>Također posjetite: </b><a href="https://www.youtube.com/channel/UC8wP1YPngeyvG7-3vtEhr9A">Ovo je kul ; )</a></p><br><br>
+        <h3>Info:</h3>
+        <p><b>Također posjetite: </b><a href="https://lukasaric.com">Ovo je kul ; )</a></p>
         <div><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img class="slika2" src="slike/chonker.jpg"></a></div>
     </div>
 

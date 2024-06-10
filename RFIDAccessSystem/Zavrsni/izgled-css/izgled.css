@@ -1,22 +1,21 @@
-.div1{
-    background-color: white;
-    position: absolute;
-    width: 60%;
-    height: 120vh;
-    left: 20%;
-}
 body{
+    min-height: 100vh;
     margin: 0;
     font-family: Bahnschrift;
     background-color:#F2F4FF;
 
 }
+.div1{
+    background-color: white;
+    width: 60%;
+    margin-left: 20%;
+    min-height: 100vh;
+    padding-top: 20px;
+}
+
 h3,p{
-    position: absolute;
-    margin-top: 5%;
     margin-left:5%;
     margin-right:5%;
-    text-align:justify;
 }
 .dobro{
     text-align: center;
@@ -24,4 +23,21 @@ h3,p{
 }
 .naslov{
     text-align: center;
+}
+.podnaslov{
+    margin-bottom: 5%;
+}
+
+@media (max-width: 768px) {
+    .div1 {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    .div1 {
+        width: 90%;
+        margin-left: 5%;
+    }
 }

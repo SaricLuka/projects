@@ -32,22 +32,30 @@
     </ul>
     <div id = "frm"> 
     <?php
-        $ime = $_POST['Ime'];
-        $prezime = $_POST['Prezime'];
-        $email = $_POST['Email'];
-        $ib = $_GET['ib'];
-        include('connection.php');
-        if (!$con) {
-            die("Connection failed: " . mysqli_connect_error());
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $ime = $_POST['Ime'];
+            $prezime = $_POST['Prezime'];
+            $email = $_POST['Email'];
+            $ib = $_GET['ib'];
+
+            include('connection.php');
+            if (!$con) {
+                die("Connection failed: " . mysqli_connect_error());
+            }
+
+            $sql = "UPDATE Osobe SET Ime=?, Prezime=?, Email=? WHERE IB =?";
+            if ($stmt = mysqli_prepare($con, $sql)) {
+                mysqli_stmt_bind_param($stmt, "sssi", $ime, $prezime, $email, $ib);
+
+                if (mysqli_stmt_execute($stmt)) {
+                    echo "Uspiješno promjenjeni podaci.";
+                } else {
+                    echo "Error: " . $sql . "<br>" . mysqli_error($con);
+                }
+                mysqli_stmt_close($stmt);
+            }
+            mysqli_close($con);
         }
-        $sql = "UPDATE Osobe SET Ime='$ime', Prezime='$prezime', Email='$email' WHERE IB ='$ib'";
-        if (mysqli_query($con, $sql)) {
-            echo "Uspiješno promjenjeni podaci.";
-        } else {
-            echo "Error: " . $sql . "<br>" . mysqli_error($con);
-        }
-          
-        mysqli_close($con);
     ?>
     <br><br><a class="gumb" href="pregled.php">Natrag</a>
     </div>

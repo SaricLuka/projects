@@ -4,7 +4,7 @@ table{
     /*border-style: solid;*/
     /*position: absolute;*/
     text-align: center;
-    background-color: #96C5F7;
+    background-color:#daecff;
     width: 80%;
     height: 100%;
     margin-left: 10%;
@@ -23,4 +23,30 @@ th,td,tr{
 
 th{
     font-size: 20px;
+    background-color: #A9D3FF;
+}
+
+@media (max-width: 768px) {
+    table {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    table {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    th {
+        font-size: 16px;
+    }
+
+    th, td {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
