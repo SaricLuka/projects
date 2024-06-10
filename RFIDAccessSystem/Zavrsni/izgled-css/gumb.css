@@ -1,0 +1,17 @@
+.gumb{
+    color: black;
+    background-color: #93ACB5;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: black;
+    text-decoration: none;
+}
+
+.gumb:active{
+    background-color: #A9D3FF;
+}
+
+.gumb:hover{
+    background-color: #67767c;
+}

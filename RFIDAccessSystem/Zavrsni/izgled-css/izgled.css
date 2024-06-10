@@ -1,0 +1,27 @@
+.div1{
+    background-color: white;
+    position: absolute;
+    width: 60%;
+    height: 120vh;
+    left: 20%;
+}
+body{
+    margin: 0;
+    font-family: Bahnschrift;
+    background-color:#F2F4FF;
+
+}
+h3,p{
+    position: absolute;
+    margin-top: 5%;
+    margin-left:5%;
+    margin-right:5%;
+    text-align:justify;
+}
+.dobro{
+    text-align: center;
+    margin-top: 7%;
+}
+.naslov{
+    text-align: center;
+}
